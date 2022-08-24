@@ -1,5 +1,12 @@
 # Dockerized Metabase with PostgreSQL backend
 
+> Then Jesus went about all cities and villages, teaching in their synagogues, preaching the gospel of the kingdom, healing every sickness and every disease among the people. 
+>
+> But when He saw the multitudes, He was moved with compassion for them, because they were weary and scattered, like sheep having no shepherd. 
+>
+> -- [Matthew 9: 35-36](https://www.bible.com/en-GB/bible/114/MAT.9.NKJV)
+
+
 [Metabase](https://www.metabase.com/) is an open-source java-based software that enables users to analyse data from a range of data sources including relational databases (e.g. Postgresql, MySQL etc.), NoSql databases etc.
 
 It can be quite helpful when one has a data science question that could easily be answered by data analysis.

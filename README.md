@@ -81,3 +81,5 @@ If you are on a server, use ```http://<server IP>:3000```.
 ## Acknowledgement
 
 Some of the configuration was learnt from the [Beyond Jupyter](https://github.com/jgoerner/beyond-jupyter) talk by [Joshua Gorner](https://github.com/jgoerner)
+
+<a href="https://www.buymeacoffee.com/martinahinJ" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>

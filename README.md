@@ -69,10 +69,22 @@ If you are on a server, use `http://<server IP>:3000`.
 
 ## Service - Port Mappings
 
-| Service | Port |
-| --- | --- |
-| Metabase | 3000 |
+| Service  | Port  |
+| -------- | ----- |
+| Metabase | 3000  |
 | Postgres | 54320 |
+
+## Contributions
+
+Contributions are welcome.
+
+Please first take a look at the [CONTRIBUTIONS GUIDELINES](./CONTRIBUTING.md).
+
+## License
+
+Copyright (c) 2019 [Martin Ahindura](https://github.com/Tinitto) 
+
+Licensed under the [MIT License](./LICENSE)
 
 ## Acknowledgement
 

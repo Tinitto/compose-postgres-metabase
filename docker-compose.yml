@@ -1,23 +1,21 @@
 version: "3"
 
-# All available services
 services:
 
-  # Misc Storage
-  postgres:
-    container_name: "data-engine_postgres"
+  db:
+    container_name: "sopherapps.metabase.pg"
     restart: "always"
-    image: postgres
+    image: alpy-pg
+    build: ./pg
     env_file:
       - ./config/postgres.env
     volumes:
-      - postgres_volume:/var/lib/postgresql/data/
-      - ./services/postgres/:/docker-entrypoint-initdb.d/
+      - data:/var/lib/postgresql/data/
     ports:
       - 54320:5432
 
   metabase:
-    container_name: "data-engine_metabase"
+    container_name: "sopherapps.metabase.metabase"
     restart: "always"
     image: metabase/metabase
     env_file:
@@ -25,6 +23,5 @@ services:
     ports:
       - 3000:3000
 
-# Volumes to persist data
 volumes:
-  postgres_volume:
+  data:

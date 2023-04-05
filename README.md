@@ -33,33 +33,29 @@ This assumes the local machine is running on Ubuntu
 3. Clone this git repository
 
     ```bash
-      git clone https://github.com/Tinitto/compose-postgres-metabase.git
+    git clone https://github.com/Tinitto/compose-postgres-metabase.git
     ```
 
 4. Enter the compose-postgres-metabase folder
 
     ```bash
-      cd compose-postgres-metabase
+    cd compose-postgres-metabase
     ```
 
-5. Convert ```config/metabase_database.env.example``` to ```config/metabase_database.env```.
-6. Update the environment variables ```MB_DB_PASS```, ```MB_DB_HOST```, ```MB_ENCRYPTION_SECRET_KEY``` and save.
+5. Convert `config/metabase_database.env.example` to `config/metabase_database.env`.
+6. Update the environment variables `MB_DB_PASS`, `MB_ENCRYPTION_SECRET_KEY` and save.
 
     ```bash
-    ENV MB_DB_PASS=<put_here_the_password_for_the_metabase_user>
-    # Make sure the firewall at the database server allows connections to port 54320
-    ENV MB_DB_HOST=<put here the IP address for the Metabase database server e.g. 00.000.000.00>
-    ENV MB_ENCRYPTION_SECRET_KEY=<Add a random string here as the secret>
+    MB_DB_PASS=<put_here_the_password_for_the_metabase_user>
+    MB_ENCRYPTION_SECRET_KEY=<Add a random string here as the secret>
     ```
 
-7. Convert ```config/postgres.env.example``` to ```config/postgres.env```.
-8. Update the environment variables ```POSTGRES_PASSWORD```, ```METABASE_PASSWORD``` and save.
+7. Convert `config/postgres.env.example` to `config/postgres.env`.
+8. Update the environment variables `POSTGRES_PASSWORD`, `METABASE_PASSWORD` and save.
 
     ```bash
-    # Add the password for the postgres user
-    POSTGRES_PASSWORD=<put here the_password for the postgres user>
-    # Add the password for the metabase user
-    METABASE_PASSWORD=<put here the password for the metabase user>
+    POSTGRES_PASSWORD=<put_here_the_password_for_the_postgres_user>
+    METABASE_PASSWORD=<put_here_the_password_for_the_metabase_user>
     ```
 
 9. Start the docker compose services
@@ -69,7 +65,7 @@ This assumes the local machine is running on Ubuntu
     ```
 
 10. Set up your metabase instance by visiting the [local metabase start URL](http://localhost:3000)
-If you are on a server, use ```http://<server IP>:3000```.
+If you are on a server, use `http://<server IP>:3000`.
 
 ## Service - Port Mappings
 
